@@ -1,0 +1,7 @@
+PDB ID	CATH status	comments
+1s9z	rejected by SIFT	17aa amyloid tetramer
+1fsD	rejected by SIFT	beta beta alpha
+3v86	rejected by SIFT	protein crystal
+1RH4	rejected by SIFT	right-handed coiled tetramer
+4oxw	no status?	for some reason the PDB chain exists in CATH but has no info
+3wwf	chopped/holding pen/write scan list	chopped into 3 domains, domains waiting action - holding pen for 2 and write scan list for other
