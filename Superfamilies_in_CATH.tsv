@@ -3,4 +3,4 @@ superfamily	quick description	link	size	proportion of de novo	comments
 1.20.1480.30	designed 4-helix bundles	http://cathdb.info/version/v4_1_0/superfamily/1.20.1480.30	2 domains	100%	2 WCD De Novo designed proteins, 4-helix bundle
 2.80.10.50	Trefoil (Acidic Fibroblast Growth Factor, subunit A)	http://cathdb.info/version/latest/superfamily/2.80.10.50	1111 domains	?	some bundles are purely DND while others are DBN, work in progress (2.80.10.50.24.1 cluster is DND)
 1.20.5.420	Immunoglobulin FC, subunit C	http://cathdb.info/version/latest/superfamily/1.20.5.420	120 domains	-	later
-1.25.40.20	Serine Threonine Protein Phosphatase 5	http://cathdb.info/version/v4_1_0/superfamily/1.25.40.20	293 domains	-	later
+1.25.40.20	Serine Threonine Protein Phosphatase 5	http://cathdb.info/version/v4_1_0/superfamily/1.25.40.20	293 domains	50%	mostly ankyrn repeats, looks like 50/50 DND and DBN
