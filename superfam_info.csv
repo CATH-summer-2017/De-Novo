@@ -1,8 +1,41 @@
 cath_id,example_domain_id,classification_name,child_count_s100,child_count_s95,child_count_s60,child_count_s35
-1.10.287.540,1g6uA00,Helix hairpin bin,11,7,7,7
-1.25.40.20,4duiA00,,121,89,50,42
-3.10.20.90,3goeA00,"Phosphatidylinositol 3-kinase Catalytic Subunit; Chain A, domain 1",364,201,147,121
-1.25.40.10,4ga2A00,,153,112,101,84
-1.20.5.420,4npdA00,"Immunoglobulin FC, subunit C",83,35,14,14
+1.20.5.170,2ynzC01,,102,50,45,40
+3.30.1710.10,1qysA00,"top7, de novo designed protein",4,4,4,2
+3.80.20.20,3p0yA00,"24 nucleotide stem-loop, u2 snrnp hairpin iv. U2 a'. Chain A, domain 1",28,19,13,8
+2.60.40.10,4unuA00,Immunoglobulins,4582,3120,1043,704
+3.40.50.1460,2dkoA00,,94,23,21,15
+3.90.960.10,2dxaA00,YbaK/ProRS associated domain,14,9,7,6
+2.60.40.230,2mcmA00,,9,8,4,2
+2.40.50.140,1x54A01,Nucleic acid-binding proteins,446,298,257,176
+3.80.10.10,3rfsA00,Ribonuclease Inhibitor,116,72,56,43
 1.20.1270.70,2zxqA06,Designed single chain three-helix bundle,2,2,2,2
+3.30.572.10,4iqbA00,"Thymidylate Synthase, chain A",191,25,16,5
+1.25.40.20,4duiA00,,121,89,50,42
+1.20.5.420,4npdA00,"Immunoglobulin FC, subunit C",83,35,14,14
+2.60.90.10,1uxaA00,Adenovirus Type 5 Fiber Protein (Receptor Binding Domain),19,14,9,5
+4.10.860.20,3v1aA00,"rabenosyn (458-503), rab4 binding domain ",4,2,1,1
+1.10.8.40,2j5yA00,Albumin-binding domain,7,6,3,1
+3.20.20.70,2vxnA00,Aldolase class I,1236,464,352,188
 1.20.1480.30,1p68A00,Designed four-helix bundle protein,2,2,1,1
+3.10.20.90,3goeA00,"Phosphatidylinositol 3-kinase Catalytic Subunit; Chain A, domain 1",364,201,147,121
+3.10.20.10,1igdA00,,89,61,20,14
+1.20.120.10,2ykzA00,,73,20,10,8
+3.10.450.10,2o9uX00,,42,24,19,13
+3.40.50.720,1c0pA01,NAD(P)-binding Rossmann-like Domain,2110,1083,879,538
+3.40.50.300,2gxqA00,P-loop containing nucleotide triphosphate hydrolases,1818,897,668,400
+3.10.28.10,2ab5A01,Homing endonucleases,67,37,27,19
+1.20.190.20,3iquA00,,50,15,5,3
+1.25.40.10,4ga2A00,,153,112,101,84
+2.80.10.50,3nbcA00,,321,161,109,79
+1.10.530.10,2vb1A00,,298,59,33,18
+3.40.50.1820,1ys1X00,,842,316,253,184
+3.40.220.10,4ablA00,"Leucine Aminopeptidase, subunit E, domain 1",67,39,29,21
+3.30.70.340,1kwmA01,,16,13,8,6
+1.10.287.540,1g6uA00,Helix hairpin bin,11,7,7,7
+1.25.10.10,1wa5B00,Leucine-rich Repeat Variant,87,39,27,22
+2.30.42.10,2fe5A00,,332,235,152,109
+2.40.128.20,3kffA00,,277,130,80,54
+2.30.30.220,1ou8A00,SspB-like,15,5,4,2
+1.20.120.160,4g78A00,,27,18,15,11
+2.120.10.30,1pjxA00,"TolB, C-terminal domain",82,30,24,22
+1.10.533.10,2bbrA02,"Death Domain, Fas",74,54,49,42
