@@ -21,10 +21,32 @@ for protein in protein_list:
     print(protein)
     get_superfam(protein)
 pprint(dict_of_pdb)
-# u_a = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36"
-# response = requests.get(url, headers={"USER-AGENT":u_a})
 
 
-# headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0'}
-# >>> _get = get('http://stats.nba.com/stats/playergamelog', params={'PlayerID': 203082, 'Season':'2015-16', 'SeasonType':'Regular Season'}, headers=headers)
-# >>> _get.raise_for_status()
+# results
+# {'2a3d': '1.20.58.130',
+#  '2mra': '3.30.1710.10',
+#  '3hoj': '3.20.20.70',
+#  '3nxf': '3.20.20.70',
+#  '3o49': '2.80.10.50',
+#  '3o4a': '2.80.10.50',
+#  '3o4b': '2.80.10.50',
+#  '3o4c': '2.80.10.50',
+#  '3o4d': '2.80.10.50',
+#  '3ud6': '3.20.20.70',
+#  '3v1a': '4.10.860.20',
+#  '3v1b': '4.10.860.20',
+#  '3v1c': '4.10.860.20',
+#  '3v1d': '4.10.860.20',
+#  '3v1e': '4.10.860.20',
+#  '3v1f': '4.10.860.20',
+#  '4d8h': '2.80.10.50',
+#  '4ess': '3.40.220.10',
+#  '4etj': '3.40.220.10',
+#  '4etk': '3.40.220.10',
+#  '4f2v': '3.30.572.10',
+#  '4f34': '2.80.10.50',
+#  '4gmr': '1.25.40.20',
+#  '4hxt': '1.25.10.10',
+#  '4kyb': '3.40.220.10',
+#  '4loa': '3.40.50.300'}
