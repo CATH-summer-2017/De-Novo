@@ -1,0 +1,8 @@
+child_count_s100,example_domain_id,child_count_s35,child_count_s60,cath_id,classification_name,child_count_s95
+11,1g6uA00,7,7,1.10.287.540,Helix hairpin bin,7
+2,2zxqA06,2,2,1.20.1270.70,Designed single chain three-helix bundle,2
+83,4npdA00,14,14,1.20.5.420,"Immunoglobulin FC, subunit C",35
+121,4duiA00,42,50,1.25.40.20,,89
+364,3goeA00,121,147,3.10.20.90,"Phosphatidylinositol 3-kinase Catalytic Subunit; Chain A, domain 1",201
+153,4ga2A00,84,101,1.25.40.10,,112
+2,1p68A00,1,1,1.20.1480.30,Designed four-helix bundle protein,2
