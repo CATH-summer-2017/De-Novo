@@ -47,14 +47,14 @@ for protein in protein_list:
     print(protein)
     get_superfam(protein)
 
-
-with open('pdb_superfam.csv', 'w') as f:
-    w = csv.DictWriter(f, dict_of_pdb.keys())
-    w.writeheader()
-    w.writerow(dict_of_pdb)
+pdb_superfam = open('pdb_superfam.csv', 'w')
+pdb_superfam.write("PDB_ID,Superfamily_ID\n")
+for keys in dict_of_pdb:
+    pdb_superfam.write(keys + "," + dict_of_pdb[keys] + "\n")
 
 with open('superfam_info.csv', 'w') as f:
-    w = csv.DictWriter(f, dict_of_superfam['1.10.287.540'].keys())
+    filetags = ['cath_id', 'example_domain_id', 'classification_name', 'child_count_s100', 'child_count_s95', 'child_count_s60', 'child_count_s35']
+    w = csv.DictWriter(f, filetags)
     w.writeheader()
     for key in dict_of_superfam:
         w.writerow(dict_of_superfam[key])
