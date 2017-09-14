@@ -34,23 +34,32 @@ def get_info(superfam):
 def get_superfam(pdb_id):
     res = requests.get('http://www.cathdb.info/version/v4_1_0/api/rest/domain_summary/' + pdb_id + 'A00/', headers={"USER-AGENT":u_a})
     webpage_dict = res.json()
-    if webpage_dict["success"] == False:
-        print("No superfam for this domain")
     if webpage_dict["success"] == True:
-        print("Getting a superfam for this protein")
+        print("Getting a superfam for this WCD protein (A00)")
         dict_of_pdb[pdb_id] = webpage_dict['data']['superfamily_id']
         dict_of_superfam[dict_of_pdb[protein]] = get_info(dict_of_pdb[protein])
+    elif webpage_dict["success"] == False:
+        print("No superfam for this domain, trying A01")
+        res = requests.get('http://www.cathdb.info/version/v4_1_0/api/rest/domain_summary/' + pdb_id + 'A01/', headers={"USER-AGENT":u_a})
+        webpage_dict = res.json()
+        if webpage_dict["success"] == True:
+            print("Getting a superfam for this domain of a protein (A01)")
+            dict_of_pdb[pdb_id] = webpage_dict['data']['superfamily_id']
+            dict_of_superfam[dict_of_pdb[protein]] = get_info(dict_of_pdb[protein])
+        elif webpage_dict["success"] == False:
+            print("No superfam for this protein")
+
 
 for protein in protein_list:
     print(protein)
     get_superfam(protein)
 
-pdb_superfam = open('pdb_superfam.csv', 'w')
+pdb_superfam = open('/home/ilya/Projects/De-Novo/results/pdb_superfam.csv', 'w')
 pdb_superfam.write("PDB_ID,Superfamily_ID\n")
 for keys in dict_of_pdb:
     pdb_superfam.write(keys + "," + dict_of_pdb[keys] + "\n")
 
-with open('superfam_info.csv', 'w') as f:
+with open('/home/ilya/Projects/De-Novo/results/superfam_info.csv', 'w') as f:
     filetags = ['cath_id', 'example_domain_id', 'classification_name', 'child_count_s100', 'child_count_s95', 'child_count_s60', 'child_count_s35']
     w = csv.DictWriter(f, filetags)
     w.writeheader()
