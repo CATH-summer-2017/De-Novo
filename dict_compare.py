@@ -93,8 +93,16 @@ def merge_two_dicts(x, y):
     z.update(y)
     return z
 bigdict = merge_two_dicts(results_1, results_2)
+
+
 tsv_file = open('/home/ilya/Projects/De-Novo/Big-List.tsv', 'w')
 tsv_file.write("PDB_ID\tSuperfamilies\n")
-for key in bigdict:
-    tsv_file.write(key + "\t" + bigdict[key] + "\n")
-tsv_file.close
+
+
+for key,value in bigdict.iteritems():
+    tsv_file.write( key + "\t" + value + "\n")
+
+# for key in bigdict:
+#     tsv_file.write(key + "\t" + bigdict[key] + "\n")
+
+tsv_file.close()
