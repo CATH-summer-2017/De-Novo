@@ -1,4 +1,4 @@
-## Descussion of the results
+## Discussion of the results
 ### What are the results?
 Using some python scripts and other methods I managed to compile the information about __De-Novo proteins in CATH__ into [one big csv](https://github.com/CATH-summer-2017/De-Novo/blob/master/results/superfam_info.csv). The most important column in the csv is the first two - they show which superfamilies have whoich proportion of De-Novo proteins. My research shows the 166 De-Novo proteins in CATH are spread across 47 different superfamilies. However only 10 superfamilies have De-Novo that contribute to more than 5% of all domains. They are listed in the __table below:__
 
