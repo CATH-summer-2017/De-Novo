@@ -9,11 +9,25 @@ for prot in proteins:
     protein_list.append(prot.lower())
 
 textRegex = re.compile(r'\s\s+')
-result_dict = {}
+superfam_dict = {}
+domain_dict = {}
 for line in all_doms.readlines():
     for protein in protein_list:
         if protein in line:
             text_as_list = textRegex.split(line)
             superfam_id = ".".join(text_as_list[1:5])
-            result_dict[superfam_id] = {}
-pprint(result_dict)
+            superfam_dict[superfam_id] = {}
+            domain_dict[text_as_list[0]] = ".".join(text_as_list[1:5])
+pprint(domain_dict)
+for superfam in superfam_dict:
+    superfam_dict[superfam] = {
+    "domain_list" : [],
+    "number_of_all_doms" : 0,
+    "number_of_DeNovo_doms" : 0,
+    "proportion of De-Novo" : 0
+    }
+for key in domain_dict:
+    superfam_dict[domain_dict[key]]["domain_list"].append(key)
+for superfam in superfam_dict:
+    superfam_dict[superfam]["number_of_DeNovo_doms"] = len(superfam_dict[superfam]["domain_list"])
+pprint(superfam_dict)
