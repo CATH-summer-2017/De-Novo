@@ -1,28 +1,39 @@
 ## Discussion of the results
 ### What are the results?
-Using some python scripts and other methods I managed to compile the information about __De-Novo proteins in CATH__ into [one big csv](https://github.com/CATH-summer-2017/De-Novo/blob/master/results/superfam_info.csv). The most important column in the csv is the first two - they show which superfamilies have whoich proportion of De-Novo proteins. My research shows the 166 De-Novo proteins in CATH are spread across 47 different superfamilies. However only 10 superfamilies have De-Novo that contribute to more than 5% of all domains. They are listed in the __table below:__
+Using some python scripts and other methods I managed to compile the information about __De-Novo proteins in CATH__ into [one big csv](https://github.com/CATH-summer-2017/De-Novo/blob/master/results/final_results.csv). My research shows the 463 De-Novo proteins in CATH are spread across 65 different superfamilies. However only 20 superfamilies have De-Novo that contribute to more than 5% of all domains. They are listed in the __table below:__
 
 ***
 
 
-| superfam id | de-novo proportion | number of domains | number of de-novo | example domain id | description |
-| ------------| --------- | --- | ------- | ----- | ------------------- |
-| [1.20.1480.30](http://cathdb.info/version/v4_1_0/superfamily/1.20.1480.30/) | 100.00% | 2 | 2 | 1p68A00 | Designed four-helix bundle protein | 
-| [3.30.1710.10](http://cathdb.info/version/v4_1_0/superfamily/3.30.1710.10/) | 100.00% | 5 | 5 | 1qysA00 | "top7 |  de novo designed protein" | 
-| [1.20.1270.70](http://cathdb.info/version/v4_1_0/superfamily/1.20.1270.70/) | 50.00% | 2 | 1 | 2zxqA06 | Designed single chain three-helix bundle | 
-| [4.10.860.20](http://cathdb.info/version/v4_1_0/superfamily/4.10.860.20/) | 33.33% | 18 | 6 | 3v1aA00 | "rabenosyn (458-503) |  rab4 binding domain " | 
-| [1.10.8.40](http://cathdb.info/version/v4_1_0/superfamily/1.10.8.40/) | 23.08% | 13 | 3 | 2j5yA00 | Albumin-binding domain | 
-| [1.20.5.420](http://cathdb.info/version/v4_1_0/superfamily/1.20.5.420/) | 10.00% | 120 | 12 | 4npdA00 | "Immunoglobulin FC |  subunit C" | 
-| [3.30.980.10](http://cathdb.info/version/v4_1_0/superfamily/3.30.980.10/) | 7.41% | 27 | 2 | 1v4pA01 | "Threonyl-trna Synthetase; Chain A |  domain 2" | 
-| [3.90.960.10](http://cathdb.info/version/v4_1_0/superfamily/3.90.960.10/) | 7.41% | 27 | 2 | 2dxaA00 | YbaK/ProRS associated domain | 
-| [3.30.70.340](http://cathdb.info/version/v4_1_0/superfamily/3.30.70.340/) | 6.90% | 29 | 2 | 1kwmA01 |  | 
-| [1.25.40.20](http://cathdb.info/version/v4_1_0/superfamily/1.25.40.20/) | 6.83% | 293 | 20 | 4duiA00 |  | 
+|                |                   |                           |                       | 
+|----------------|-------------------|---------------------------|-----------------------| 
+| __Superfamily ID__ | __Number of Domains__ | __Number of De-Novo Domains__ | __Proportion of De-Novo__ | 
+| [3.30.1710.10](http://cathdb.info/version/v4_1_0/superfamily/3.30.1710.10/)   | 5                 | 5                         | 100.00%               | 
+| [1.20.1480.30](http://cathdb.info/version/v4_1_0/superfamily/1.20.1480.30/)   | 2                 | 2                         | 100.00%               | 
+| [1.20.120.660](http://cathdb.info/version/v4_1_0/superfamily/1.20.120.660/)   | 1                 | 1                         | 100.00%               | 
+| [4.10.860.20](http://cathdb.info/version/v4_1_0/superfamily/4.10.860.20/)    | 18                | 17                        | 94.40%                | 
+| [1.10.340.20](http://cathdb.info/version/v4_1_0/superfamily/1.10.340.20/)    | 2                 | 1                         | 50.00%                | 
+| [1.20.1270.70](http://cathdb.info/version/v4_1_0/superfamily/1.20.1270.70/)   | 2                 | 1                         | 50.00%                | 
+| [1.20.5.420](http://cathdb.info/version/v4_1_0/superfamily/1.20.5.420/)     | 120               | 46                        | 38.30%                | 
+| [1.20.91.10](http://cathdb.info/version/v4_1_0/superfamily/1.20.91.10/)    | 44                | 15                        | 34.10%                | 
+| [1.10.10.180](http://cathdb.info/version/v4_1_0/superfamily/1.10.10.180/)   | 45                | 15                        | 33.30%                | 
+| [1.10.8.40](http://cathdb.info/version/v4_1_0/superfamily/1.10.8.40/)      | 13                | 3                         | 23.10%                | 
+| [3.90.960.10](http://cathdb.info/version/v4_1_0/superfamily/3.90.960.10/)    | 27                | 6                         | 22.20%                | 
+| [3.30.54.20](http://cathdb.info/version/v4_1_0/superfamily/3.30.54.20/)    | 18                | 3                         | 16.70%                | 
+| [1.25.40.20](http://cathdb.info/version/v4_1_0/superfamily/1.25.40.20/)     | 293               | 46                        | 15.70%                | 
+| [3.30.70.340](http://cathdb.info/version/v4_1_0/superfamily/3.30.70.340/)    | 29                | 4                         | 13.80%                | 
+| [3.30.980.10](http://cathdb.info/version/v4_1_0/superfamily/3.30.980.10/)    | 27                | 3                         | 11.10%                | 
+| [3.90.930.1](http://cathdb.info/version/v4_1_0/superfamily/3.90.930.1/)     | 20                | 2                         | 10.00%                | 
+| [2.30.30.220](http://cathdb.info/version/v4_1_0/superfamily/2.30.30.220/)    | 33                | 3                         | 9.10%                 | 
+| [3.10.20.10](http://cathdb.info/version/v4_1_0/superfamily/3.10.20.10/)    | 212               | 19                        | 9.00%                 | 
+| [2.60.40.230](http://cathdb.info/version/v4_1_0/superfamily/2.60.40.230/)    | 27                | 2                         | 7.40%                 | 
+| [1.25.10.10](http://cathdb.info/version/v4_1_0/superfamily/1.25.10.10/)     | 313               | 16                        | 5.10%                 | 
+| [3.40.220.10](http://cathdb.info/version/v4_1_0/superfamily/3.40.220.10/)    | 198               | 10                        | 5.10%                 | 
+
 
 ***
 ### Discussion
 
-As we can in these superfamilies domains from De-Novo proteins make up quite a significant proportion, in some more than in others. Quite an intersting example is the 1.20.1270.70 superfamily, consisting of only 2 domains, one of them De-Novo and one of them 6th domain of endo-alpha-N-acetylgalactosaminidase. 2 superfamilies that consist of only De-Novo proteins are suspicious as well.
+As we can see from the table above, among the 20 superfamilies with over 5% De-Novo content, 6 have an over 50% De-Novo content, while having only 27 domains. It seems to me that these superfamilies might not belong in CATH, escpecially since some of them are very small ([1.20.120.660](http://cathdb.info/version/v4_1_0/superfamily/1.20.120.660/) is a good example, having only 1 domain). However I am still unsure about the general idea of De-Novo proteins in CATH
 
-### Issues
 
-I plan to rewrite the code in /scripts directory so it would do more check and in general be more defensive, which may result in appearance of a couple of other De-Novo proteins that I might have missed before. 
