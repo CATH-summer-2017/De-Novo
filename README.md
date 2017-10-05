@@ -22,7 +22,7 @@ However, if it turns out that the negative effect is negligible, we can just tag
 ## Discussion of the results
 
 ### What are the results?
-Using some python scripts and other methods I managed to compile the information about __De-Novo proteins in CATH__ into [one big csv](https://github.com/CATH-summer-2017/De-Novo/blob/master/results/final_results.csv). My research shows the 463 De-Novo proteins in CATH are spread across 65 different superfamilies. However only 20 superfamilies have De-Novo that contribute to more than 5% of all domains. They are listed in the __table below:__
+Using some python scripts and other methods I managed to compile the information about __De-Novo proteins in CATH__ into [one big csv](https://github.com/CATH-summer-2017/De-Novo/blob/master/results/final_result.csv). My research shows the 463 De-Novo proteins in CATH are spread across 65 different superfamilies. However only 20 superfamilies have De-Novo that contribute to more than 5% of all domains. They are listed in the __table below:__
 
 ***
 
