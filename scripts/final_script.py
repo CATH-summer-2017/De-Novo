@@ -12,13 +12,15 @@ for prot in proteins:
 textRegex = re.compile(r'\s+')
 superfam_dict = {}
 domain_dict = {}
-all_doms = open('/home/ilya/Projects/De-Novo/data/alldoms.txt', 'r')
+
 
 ### read all lines in pdb and find if they have
 
+all_doms = open('/home/ilya/Projects/De-Novo/data/alldoms.txt', 'r')
 for line in all_doms.readlines():
     for protein in protein_list:
         if protein in line:
+            print("Now parsing this line:    " + line)
             text_as_list = textRegex.split(line)
             superfam_id = ".".join(text_as_list[1:5])
             superfam_dict[superfam_id] = {}
@@ -51,11 +53,21 @@ for superfam in superfam_dict:
     superfam_dict[superfam]["number_of_DeNovo_doms"] = len(superfam_dict[superfam]["domain_list"])
     superfam_dict[superfam]["number_of_all_doms"] = int(all_superfam_dict[superfam])
     superfam_dict[superfam]["proportion_of_DeNovo"] = round(superfam_dict[superfam]["number_of_DeNovo_doms"]/superfam_dict[superfam]["number_of_all_doms"], 3)
+
+### load data as CSV
+
 with open('/home/ilya/Projects/De-Novo/results/final_result.csv', 'w') as finalresult:
     finalresult.write("Superfamily ID,Number of Domains,Number of De-Novo Domains,Proportion of De-Novo\n")
     for key in superfam_dict:
         finalresult.write(key + "," + str(superfam_dict[key]["number_of_all_doms"]) + "," + str(superfam_dict[key]["number_of_DeNovo_doms"]) + "," + str(superfam_dict[key]["proportion_of_DeNovo"]) + "\n")
 
+## save data as JSON
+
 with open('/home/ilya/Projects/De-Novo/results/all_DeNovo.json', 'w') as jsondata:
     json.dump(superfam_dict, jsondata)
 pprint(superfam_dict)
+
+with open("/home/ilya/Projects/De-Novo/results/domains.csv", "w") as domaindata:
+    domaindata.write("Domain,Superfamily\n")
+    for key in domain_dict:
+        domaindata.write(key + "," + domain_dict[key] + "\n")
